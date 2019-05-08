@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="189.0" prefWidth="318.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.tempconverter.FXMLController">
+    <children>
+        <Button fx:id="ConvFarenheit" layoutX="159.0" layoutY="143.0" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="137.0" text="Convert to farenheit" />
+        <Label fx:id="CelLabel" layoutX="31.0" layoutY="20.0" minHeight="16" minWidth="69" prefHeight="25.0" prefWidth="106.0" text="Enter Celsius:" />
+      <Label fx:id="FarLabel" layoutX="31.0" layoutY="56.0" minHeight="16" minWidth="69" prefHeight="25.0" prefWidth="106.0" text="Enter Farenheit:" />
+      <TextField fx:id="CelsiusInput" layoutX="120.0" layoutY="20.0" prefHeight="25.0" prefWidth="177.0" promptText="Enter temperature in Celsius" />
+      <TextField fx:id="FarenheitInput" layoutX="120.0" layoutY="56.0" prefHeight="25.0" prefWidth="177.0" promptText="Enter temperature in Farenheit" />
+      <TextField fx:id="Result" layoutX="147.0" layoutY="101.0" />
+      <Label fx:id="ResLabel" layoutX="31.0" layoutY="101.0" prefHeight="25.0" prefWidth="83.0" text="Result:" AnchorPane.topAnchor="101.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="ConvCelsius" layoutX="16.0" layoutY="143.0" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="137.0" text="Convert to celsius" />
+    </children>
+   <effect>
+      <DropShadow radius="11.4825" width="26.93" />
+   </effect>
+</AnchorPane>
